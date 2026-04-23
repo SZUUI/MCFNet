@@ -24,9 +24,9 @@ Low-altitude infrared object detection is a fundamental technology for airspace 
 <strong>Success Cases</strong>
 <table>
   <tr>
-    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence86.gif" alt="Success case on Sequence86 under heavy-clutter conditions." height="220"></td>
-    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence88.gif" alt="Success case on Sequence88 under heavy-clutter conditions." height="220"></td>
-    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence89.gif" alt="Success case on Sequence89 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence86_web.gif" alt="Success case on Sequence86 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence88_web.gif" alt="Success case on Sequence88 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence89_web.gif" alt="Success case on Sequence89 under heavy-clutter conditions." height="220"></td>
   </tr>
 </table>
 </div>
@@ -35,9 +35,9 @@ Low-altitude infrared object detection is a fundamental technology for airspace 
 <strong>Failure Cases</strong>
 <table>
   <tr>
-    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence90.gif" alt="Failure case on Sequence90 under heavy-clutter conditions." height="220"></td>
-    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence95.gif" alt="Failure case on Sequence95 under heavy-clutter conditions." height="220"></td>
-    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence96.gif" alt="Failure case on Sequence96 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence90_web.gif" alt="Failure case on Sequence90 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence95_web.gif" alt="Failure case on Sequence95 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence96_web.gif" alt="Failure case on Sequence96 under heavy-clutter conditions." height="220"></td>
   </tr>
 </table>
 </div>
