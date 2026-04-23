@@ -10,13 +10,38 @@
 
 ## Abstract
 
-Low-altitude infrared object detection is a pivotal technology for airspace surveillance and wide-area monitoring. However, accurately locating dim targets remains a significant challenge, particularly when targets are embedded in complex dynamic backgrounds such as drifting clouds and swaying vegetation. While single-frame methods struggle with the inconspicuous spatial features of tiny objects, existing multi-frame approaches often fail to differentiate between the ordered motion patterns of potential targets and the random fluctuations of environmental clutter, leading to false alarms. To address this limitation, this article proposes a novel Motion Consistency-Guided Fusion Network (MCFNet). The key insight of our approach is that motion consistency serves as the critical physical cue for separating targets from cluttered backgrounds. Specifically, we first construct a bio-inspired motion perception module that incorporates fractional-order temporal integration to model the signal accumulation and memory effect of moving objects. To distinguish targets from dynamic clutter, we introduce a motion consistency encoding module that explicitly encodes motion directionality and trajectory coherence using dynamic directional filters. Furthermore, we implement a consistency-aware cross-attention mechanism that actively retrieves and reinforces spatially aligned features based on motion reliability. Comprehensive experiments on the Anti-UAV410, ITSDT-15K, and IRDST benchmarks demonstrate that our method outperforms state-of-the-art approaches, achieving a superior AP50 of 82.59% on the dynamic Anti-UAV410 dataset and a gain of 11.43% on the IRDST benchmark. Moreover, the model exhibits exceptional robustness in complex environments characterized by intense clutter and scale variations. 
+Low-altitude infrared object detection is a fundamental technology for airspace surveillance and wide-area monitoring. However, accurately detecting dim and tiny targets remains highly challenging in complex scenes, where targets are often captured under low signal-to-noise ratio conditions and appear as weak responses embedded in drifting clouds, swaying vegetation, and other background clutter. Although multi-frame methods can exploit temporal information to enhance target perception, distinguishing target-related motion from clutter-induced motion remains difficult when both targets and dynamic background vary across frames. To address this challenge, we propose a Motion Consistency-Guided Fusion Network (MCFNet) for low-altitude infrared object detection. Specifically, we first develop a bio-inspired motion perception mechanism that combines ON/OFF pathway modeling with fractional-order temporal integration to improve sensitivity to weak motion. Building on this, we further design a motion consistency encoding strategy that estimates motion intensity and adaptively adjusts directional offsets to alleviate motion-scale mismatch while capturing motion directionality and trajectory coherence. These encoded motion cues are then introduced into an adaptive fusion process through a consistency-aware cross-attention mechanism, which retrieves and reinforces target-relevant spatial features while suppressing contamination caused by background-induced pseudo-motion. Comprehensive experiments on the Anti-UAV410, ITSDT-15K, and IRDST benchmarks demonstrate that the proposed method achieves competitive performance, reaching an AP50 of 82.59% on the dynamic Anti-UAV410 dataset and improving AP50 by 11.43% on IRDST. Moreover, the model shows favorable robustness in complex environments characterized by intense clutter and scale variations. 
 
 ## MCFNet Framework
 
 <div align="center">
 <img src="./fig/image.png" alt="arch" width="95%">
 </div>
+
+### Success and Failure Cases in Heavy-Clutter Scenes
+
+<div align="center">
+<strong>Success Cases</strong>
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence86.gif" alt="Success case on Sequence86 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence88.gif" alt="Success case on Sequence88 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence89.gif" alt="Success case on Sequence89 under heavy-clutter conditions." height="220"></td>
+  </tr>
+</table>
+</div>
+
+<div align="center">
+<strong>Failure Cases</strong>
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence90.gif" alt="Failure case on Sequence90 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence95.gif" alt="Failure case on Sequence95 under heavy-clutter conditions." height="220"></td>
+    <td align="center" width="33%"><img src="./NUDT_MIRSDT_HiNo_gif/Sequence96.gif" alt="Failure case on Sequence96 under heavy-clutter conditions." height="220"></td>
+  </tr>
+</table>
+</div>
+
 
 ## Visualization
 
